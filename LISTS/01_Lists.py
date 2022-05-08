@@ -1,5 +1,8 @@
 
 # T1Find idx of the largest element of list A
+from telnetlib import Telnet
+
+
 def findIndexOfLargestElementInList (A) :
     maxId = 0
     for i in range(1, len(A)):
@@ -62,6 +65,20 @@ def IndexOfMaxEvenElemet(A):
     idxOfLargestEventElement = findIndexOfLargestElementInList(EvenElements)
     return EvenElementsIndices[idxOfLargestEventElement]
 
+# T5 Fin 2 el that sums up to 20. Ture if has.
+def HasSumOf20(A):
+    for i in range(0, len(A)-1):
+        for j in range(1, len(A)):
+            if A[i] + A[j] == 20:
+                return True
+    return False
+
+
+# T6 All pairs. The function should print all the pairs of elements between 0 and n−1.
+def AllPairs(n):
+    for i in range (0, n):
+        for j in range (0, n):
+            print(i,j)
 
 # Testing TASK 1 
 print("\nTask 1: Largest list element")
@@ -86,7 +103,18 @@ print("\nTask 3: Largest even element of list")
 print(findLargestEvenElement(list1))
 print(findLargestEvenElement(list2))
 
-# Test TASK 3
-print("\nTask 3: Largest even element of list")
+# Test TASSK 4
+print("\nTask 4: Index of the largest even element of list")
 print(IndexOfMaxEvenElemet(list1)) # 7
 print(IndexOfMaxEvenElemet(list2)) # 3
+
+# Test TASSK 5
+print("\nTask 5: Has 2 el that sums up to 20 ? :")
+print(HasSumOf20([1,2,3,17,2])) # T
+print(HasSumOf20([2,3,19,20])) # F
+print(HasSumOf20([1,2,3,4,5,7,10,11,10])) # T
+
+# Test TASSK 6
+print("\nTask 6: All pairs of n :")
+print(AllPairs(3))
+

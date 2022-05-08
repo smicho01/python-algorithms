@@ -1,6 +1,4 @@
 
-from curses.ascii import SO
-
 
 def SortedSquares(array):
     SortedSq = [0 for _ in array]
