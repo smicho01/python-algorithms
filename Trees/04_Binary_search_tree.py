@@ -1,6 +1,5 @@
-import re
-from typing_extensions import Self
 
+# May be unifinished !! do not rely on this in 100%
 
 class BST:
     def __init__(self):
