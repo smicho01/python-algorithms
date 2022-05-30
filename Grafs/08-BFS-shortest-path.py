@@ -11,6 +11,7 @@ def BfsShortestPath(graph, startNode, endNode):
             if neighbor not in visitedNodes:
                 queue.append(neighbor)
                 predecessorNodes[neighbor] = currentNode
+    print('paths', predecessorNodes)
     return shortestPath(predecessorNodes, startNode, endNode)
 
 def shortestPath(predecessorNode, startNode, endNode):

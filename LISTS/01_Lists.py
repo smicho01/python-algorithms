@@ -54,7 +54,8 @@ def findLargestEvenElement(A):
             EvenElements.append(A[i])
     return max(EvenElements)
 
-# T4
+# T4 Write a function that returns an index of the largest EVEN element of the
+# input list A
 def IndexOfMaxEvenElemet(A):
     EvenElements = []
     EvenElementsIndices = []
@@ -65,7 +66,7 @@ def IndexOfMaxEvenElemet(A):
     idxOfLargestEventElement = findIndexOfLargestElementInList(EvenElements)
     return EvenElementsIndices[idxOfLargestEventElement]
 
-# T5 Fin 2 el that sums up to 20. Ture if has.
+# T5 Find two elements that sums up to 20. Ture if has.
 def HasSumOf20(A):
     for i in range(0, len(A)-1):
         for j in range(1, len(A)):
