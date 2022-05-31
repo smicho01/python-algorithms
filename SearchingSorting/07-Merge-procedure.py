@@ -1,5 +1,6 @@
 # Just a classic merge procedure that will merge 2 sorted lists
 
+# runtime 0(n)  [len(A) + len(B)]
 def Merge(A, B):
     MergedList = [] # init of merged (output) list
     curA = 0 # idx of first unaccommodated el. of A
